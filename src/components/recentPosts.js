@@ -12,7 +12,7 @@ class RecentPosts extends Component {
         this.props.fetchRecentPosts();
     }
 
-    rednerPosts = function() {
+    renderPosts = function() {
         const posts = this.props.recentPosts.map((post, index) => {
                 if(index < 3) {
                     return (
@@ -29,7 +29,7 @@ class RecentPosts extends Component {
                 <div className='recent-posts__wrapper'>
                     <div className='recent-posts__heading'>Recent Posts</div>
                     <ul className='recent-posts__posts'>
-                        {this.rednerPosts()}
+                        {this.renderPosts()}
                     </ul>
                 </div>
             </div>
