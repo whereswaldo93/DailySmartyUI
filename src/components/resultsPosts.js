@@ -7,9 +7,9 @@ class ResultsPosts extends Component {
         return (
             <div className='results-posts'>
                 <div className='results-wrapper'>
-                    <div className='results-posts__posts'>
+                    <ul className='results-posts__posts'>
                         Results go here
-                    </div>
+                    </ul>
                 </div>
             </div>
         );
